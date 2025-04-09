@@ -24,9 +24,11 @@ interface HowItWorksSectionProps {
 
 export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ type }) => {
   const title = type === 'entertainers' 
-    ? 'How ShowKonnect Works (For Entertainers)'
-    : 'How ShowKonnect Works (For Employers)';
-    
+    ? 'How ShowKonnect Works'
+    : 'How ShowKonnect Works';
+  
+    const subtitle = type === 'entertainers'
+    ? ' (For Entertainers)' : ' (For Employers)';
   const description = type === 'entertainers'
     ? 'Find gigs, showcase your talent, and get paid fast. Join thousands of entertainers booking jobs effortlessly!'
     : 'Posting a job, selecting entertainers, and making secure payments has never been easier. Find the perfect entertainer for your event in just a few clicks!';
@@ -94,6 +96,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ type }) =>
   return (
     <section className="py-16 px-6 md:px-20">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">{title}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">{subtitle}</h2>
       <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
         {description}
       </p>

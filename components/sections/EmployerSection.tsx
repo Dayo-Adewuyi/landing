@@ -28,6 +28,7 @@ export const EmployerSection: React.FC = () => {
               sizes="(max-width: 768px) 100vw, 50vw"
               style={{ objectFit: 'cover' }}
               className="rounded-lg"
+              quality={100}
             />
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button';
 
 export const EntertainerSection: React.FC = () => {
   return (
-    <section className="py-16 px-6 md:px-20 bg-gray-50">
+    <section className="py-16 px-6 md:px-20 bg-white-50">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1 rounded-lg overflow-hidden">
           <div className="relative h-[300px] md:h-[400px] w-full">
@@ -16,6 +16,7 @@ export const EntertainerSection: React.FC = () => {
               sizes="(max-width: 768px) 100vw, 50vw"
               style={{ objectFit: 'cover' }}
               className="rounded-lg"
+              quality={100}
             />
           </div>
         </div>

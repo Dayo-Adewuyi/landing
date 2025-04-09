@@ -13,6 +13,7 @@ export const PlanGigSection: React.FC = () => {
             sizes="(max-width: 768px) 100vw, 50vw"
             style={{ objectFit: 'cover' }}
             className="rounded-lg"
+            quality={100}
           />
         </div>
         <div className="order-1 md:order-2">

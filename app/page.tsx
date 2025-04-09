@@ -6,6 +6,14 @@ import { StatsSection } from '@/components/sections/StatsSection';
 import { HowItWorksSection } from '@/components/sections/HowItWorksSection';
 import { EscrowSection } from '@/components/sections/EscrowSection';
 import { PlanGigSection } from '@/components/sections/PlanGigSection';
+ import { FeaturedCandidates } from '@/components/sections/FeaturedCandidates';
+import { UpcomingEvents } from '@/components/sections/UpcomingEvents';
+import { Testimonials} from '@/components/sections/Testimonials';
+import { BlogSection } from '@/components/sections/BlogSection';
+import { FAQ } from '@/components/sections/FAQ';
+import { FeaturedJobs } from '@/components/sections/FeaturedJobs';
+import { PromoteBanner } from '@/components/sections/PromoteBanner';
+
 
 export default function Home() {
   return (
@@ -18,6 +26,13 @@ export default function Home() {
       <HowItWorksSection type="employers" />
       <EscrowSection />
       <PlanGigSection />
+      <FeaturedJobs />
+      <UpcomingEvents />
+      <FeaturedCandidates />
+      <PromoteBanner />
+      <BlogSection />
+      <Testimonials />
+      <FAQ />
     </>
   );
 }

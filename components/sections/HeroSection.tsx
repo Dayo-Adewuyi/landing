@@ -27,6 +27,7 @@ export const HeroSection: React.FC = () => {
           priority
           style={{ objectFit: 'cover' }}
           className="opacity-70 mix-blend-overlay"
+          quality={100}
         />
       </div>
       
